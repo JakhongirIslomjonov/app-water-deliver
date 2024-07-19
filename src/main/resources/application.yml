@@ -1,0 +1,22 @@
+spring:
+  task:
+    execution:
+      pool:
+        max-size: 20
+        core-size: 8
+        queue-capacity: 100
+  datasource:
+    driverClassName: org.postgresql.Driver
+    password: 95
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+
+bot:
+  token: 6796210287:AAHXnfhFyGAT2db2cmm81ORsI9h74fNWTHA
